@@ -1,18 +1,3 @@
-# User.create(email: "omb0320@gmail.com",
-#   encrypted_password: "123456"
-#   )
-
-# User.create(email: "csuazaca@gmail.com",
-#   encrypted_password: "123456"
-#   )
-
-# User.create(email: "stiven58hurtado@gmail.com",
-#   encrypted_password: "123456"
-#   )
-
-# User.create(email: "jefferpalacio@gmail.com",
-#   encrypted_password: "123456"
-#   )
 
 Construction.create(name: "Inglés I", 
   image_url: "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY317_CR23,0,214,317_AL_.jpg",
@@ -49,3 +34,9 @@ Construction.create(name: "Inglés IV",
   user_id: 2,
   code: "MT0249"
   )
+
+
+# ------------------------------------------
+
+
+
