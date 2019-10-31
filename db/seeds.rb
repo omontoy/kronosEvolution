@@ -78,10 +78,7 @@ Construction.create(name: "Inglés 8",
   code: "Semi-Intensivo"
   )
 
-# ---------------------------
-
-# INGLÉS 9
-Construction.create(name: "Inglés 9", 
+Construction.create(name: "Inglés 8", 
   image_url: "https://m.media-amazon.com/images/M/MV5BMTU2Njk0NTUyNl5BMl5BanBnXkFtZTcwODE0OTgyNw@@._V1_UY317_CR13,0,214,317_AL_.jpg",
   capacity: 8,
   city: "Poblado",
@@ -89,6 +86,10 @@ Construction.create(name: "Inglés 9",
   user_id: 1,
   code: "Regular"
   )
+
+# ---------------------------
+
+# INGLÉS 9
 
 Construction.create(name: "Inglés 9", 
   image_url: "https://m.media-amazon.com/images/M/MV5BMjQ3ODQzMzQ3OV5BMl5BanBnXkFtZTgwNTg3MjI5NDE@._V1_UY317_CR12,0,214,317_AL_.jpg",
