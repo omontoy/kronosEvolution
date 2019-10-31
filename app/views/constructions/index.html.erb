@@ -38,24 +38,24 @@
                 <% end %>
               </h4>
 
-              <div class="text-center pull-right">
-                <%= markdown("###`Capacidad`###")%><%= construction.capacity %> Estudiantes
+              <div class="text-center pull-right" id="text">
+                <%= markdown("###`CAPACIDAD`###")%><%= construction.capacity %> Estudiantes
               </div>
    
-              <div class ="text-center pull-left" id="text_controller">
-                <%= markdown("###`Docente`###")%><%= construction.description %>
+              <div class ="text-center pull-left" id="text">
+                <%= markdown("###`DOCENTE`###")%><%= construction.description %>
               </div>
 
-              <div class ="text-center pull-center">
-                <%= markdown("###`Sesión`###")%><%= construction.code %>
+              <div class ="text-center pull-center" id="text">
+                <%= markdown("###`SESIÓN`###")%><%= construction.code %>
               </div>
 
             </div>  
 
             
             <div class="col-xs-3">
-              <div class ="text-center">
-                <%= markdown("###`Sede`###")%><%= construction.city %>
+              <div class ="text-center" id="text">
+                <%= markdown("###`SEDE`###")%><%= construction.city %>
               </div>
             </div>
             
