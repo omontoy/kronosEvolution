@@ -1,7 +1,7 @@
 <% if @constructions.count == 0 %>
   <div class="col-sm-6 col-sm-offset-3">
     <div class="jumbotron">
-      <h1 class="text-center">No existe !!</h1>
+      <h1 class="text-center">No existe este curso !!</h1>
     </div>
   </div>
 
@@ -24,9 +24,9 @@
                 <%= link_to construction.name, construction_path(construction.id) %>
               </h1>
 
-              <div class="text-center" id="date">
+              <!-- <div class="text-center" id="date">
                 <em>Publicado por <%= construction.user.email %> hace <%= time_ago_in_words(construction.created_at) %></em>
-              </div>
+              </div> -->
 
               <h4 class="text-center">
                 <% if user_signed_in? && construction.user == current_user %>

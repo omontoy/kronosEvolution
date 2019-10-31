@@ -1,0 +1,2 @@
+class Hmcourse < ApplicationRecord
+end

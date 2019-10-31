@@ -6,10 +6,10 @@ class ConstructionsController < ApplicationController
    before_action :private_access, only: [:edit]
 
    def index
-      @constructions = Construction.order('created_at DESC')
+      @constructions = Construction.order('created_at ASC')
 
       if params[:name].present? 
-        @constructions = @constructions.where("code LIKE ?", "%#{params[:name].strip}%")
+        @constructions = @constructions.where("name LIKE ?", "%#{params[:name].strip}%")
       end
    end
 
