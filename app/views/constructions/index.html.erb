@@ -37,25 +37,35 @@
                   
                 <% end %>
               </h4>
+              
 
-              <div class="text-center pull-right" id="text">
-                <%= markdown("###`CAPACIDAD`###")%><%= construction.capacity %> Estudiantes
-              </div>
-   
-              <div class ="text-center pull-left" id="text">
-                <%= markdown("###`DOCENTE`###")%><%= construction.description %>
-              </div>
+              <div id="infoThumbnail">
 
-              <div class ="text-center pull-center" id="text">
-                <%= markdown("###`SESIÓN`###")%><%= construction.code %>
+                <div class="text-center" id="text">
+                  <label>CAPACIDAD</label>
+                  <p><%= construction.capacity %> Estudiantes</p> 
+                </div>
+                
+                <div class ="text-center" id="text">
+                  <label>DOCENTE</label>
+                  <p><%= construction.description %></p> 
+                </div>
+
+                <div class ="text-center" id="text">
+                  <label>SESIÓN</label>
+                  <p><%= construction.code %></p> 
+                </div>
+
               </div>
+              
 
             </div>  
 
             
-            <div class="col-xs-3">
+            <div class="col-xs-3" id="infoSede">
               <div class ="text-center" id="text">
-                <%= markdown("###`SEDE`###")%><%= construction.city %>
+                <%= markdown("###`SEDE`###")%>
+                <p id="text-sede"><%= construction.city %></p> 
               </div>
             </div>
             
