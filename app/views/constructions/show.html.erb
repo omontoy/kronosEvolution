@@ -1,49 +1,72 @@
 
-<div class="container">
-  <div class="row">
-        
-    <div class="col-xs-12" id="text-show">
-      
-      <div class="col-xs-7">
-
-        <h1 class="text-center" id="show_title"><%= @construction.name %><hr></h1>
-        
-        <%= image_tag @construction.image_url, id:"show_image", class:"img-circle" %>
-
-        <div id="image_info">
-          <div class="pull-left">
-            <%= markdown("###`Capacidad:`###")%><%= @construction.capacity %> Estudiantes
-          </div>
-        
-          <div class="pull-right">
-            <%= markdown("###`Sede:`###")%><%= @construction.city %>
-          </div>
-        </div>
-
-        <h3 class="col-xs-4 col-xs-offset-4">
-          <% if user_signed_in? && @construction.user == current_user %>
-
-            <div class="text-center" id="description_buttons">
-              <%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, edit_construction_path(@construction), id:"edit_button" %>
-
-              <%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, @construction, data: { confirm: "Are you sure?" }, method: :delete, id:"delete_button" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="thumbnail" id="boxes">
+          <div class="col-xs-3" id="padding-images">
+            <div id="show_image">
+              <%= image_tag @construction.image_url, id:"show_image" %>
             </div>
-
-          <% end %>
-        </h3>
-      </div>
-
-
-      <div class="col-xs-5">
-        <div id="text_controller">
-          <div id="description">
-            <br><%= markdown(@construction.description) %> 
           </div>
-        </div> 
+
+          <div class="col-xs-6">
+            <h1 class="text-center">
+              <%= link_to @construction.name, construction_path(@construction.id) %>
+            </h1>
+
+
+            <h4 class="text-center">
+              <% if user_signed_in? && @construction.user == current_user %>
+
+                <%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, edit_construction_path(@construction), id:"edit_button" %>
+
+                <%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, @construction, data: { confirm: "Seguro desea eliminar el post ?" }, method: :delete, id:"delete_button" %>
+                
+              <% end %>
+            </h4>
+            
+
+            <div id="infoThumbnail">
+
+              <div class="text-center" id="text">
+                <label>CAPACIDAD</label>
+                <p><%= @construction.capacity %> Estudiantes</p> 
+              </div>
+              
+              <div class ="text-center" id="text">
+                <label>DOCENTE</label>
+                <p><%= @construction.description %></p> 
+              </div>
+
+              <div class ="text-center" id="text">
+                <label>SESIÓN</label>
+                <p><%= @construction.code %></p> 
+              </div>
+
+            </div>
+            
+
+          </div>  
+
+          
+          <div class="col-xs-3" id="infoSede">
+            <div class ="text-center" id="text">
+              <%= markdown("###`SEDE`###")%>
+              <p id="text-sede"><%= @construction.city %></p> 
+            </div>
+          </div>
+          
+        
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+
+
+
+
+
 
 <div class="container">
   <div class="col-xs-5" id="text-show">
