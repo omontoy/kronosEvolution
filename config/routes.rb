@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :students do
+    collection { post :import }
+  end
+
    get 'userposts' => 'user_posts#show'
 
   devise_for :users
@@ -8,4 +13,5 @@ Rails.application.routes.draw do
    end
 
    root 'constructions#index'
+
 end
