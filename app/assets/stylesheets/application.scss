@@ -5,7 +5,8 @@
 @import "construction";
 
 .navbar {
-   background: #A52A2A;
+   background: #00395B;
+   border-radius: 0;
 }
 
 #navbar_brand {
@@ -50,4 +51,8 @@ i>b {
     font-style:normal;
     font-weight:bold;
     text-decoration:underline;
+}
+
+#colorFondoDevise {
+   background: #404040;
 }
