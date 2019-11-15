@@ -15,7 +15,7 @@
           <div class="thumbnail" id="boxes">
             <div class="col-xs-3" id="padding-images">
               <a href="<%= construction_path(construction.id) %>">
-                <%= image_tag construction.image_url, id:"index-images" %>
+                <%= image_tag (construction.image_url), id:"index-images" %>
               </a>
             </div>
 
@@ -46,10 +46,10 @@
                   <p><%= construction.capacity %> Estudiantes</p> 
                 </div>
                 
-                <div class ="text-center" id="text">
+                <!-- <div class ="text-center" id="text">
                   <label>DOCENTE</label>
                   <p><%= construction.description %></p> 
-                </div>
+                </div> -->
 
                 <div class ="text-center" id="text">
                   <label>SESIÓN</label>
@@ -64,7 +64,7 @@
             
             <div class="col-xs-3" id="infoSede">
               <div class ="text-center" id="text">
-                <%= markdown("###`SEDE`###")%>
+                <label>SEDE</label>
                 <p id="text-sede"><%= construction.city %></p> 
               </div>
             </div>

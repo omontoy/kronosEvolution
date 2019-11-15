@@ -10,8 +10,8 @@
           </div>
 
           <div class="col-xs-6">
-            <h1 class="text-center">
-              <%= link_to @construction.name, construction_path(@construction.id) %>
+            <h1 class="text-center" id="color_course">
+              <%= @construction.name %>   
             </h1>
 
 
@@ -33,10 +33,10 @@
                 <p><%= @construction.capacity %> Estudiantes</p> 
               </div>
               
-              <div class ="text-center" id="text">
+              <!-- <div class ="text-center" id="text">
                 <label>DOCENTE</label>
                 <p><%= @construction.description %></p> 
-              </div>
+              </div> -->
 
               <div class ="text-center" id="text">
                 <label>SESIÓN</label>
@@ -51,7 +51,7 @@
           
           <div class="col-xs-3" id="infoSede">
             <div class ="text-center" id="text">
-              <%= markdown("###`SEDE`###")%>
+              <label>SEDE</label>
               <p id="text-sede"><%= @construction.city %></p> 
             </div>
           </div>

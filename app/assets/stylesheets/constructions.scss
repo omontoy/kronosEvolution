@@ -49,14 +49,30 @@ body {
       margin-top: 0;
       font-size: 60px !important;
    }
+   label {
+      font-size: 45px;
+   }
 
 }
 
 #infoThumbnail {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
+
+   label {
+      font-size: 25px;
+   }
+
+   p {
+      font-size: 20px;
+   }
+
 }
 
 #text-sede {
    font-size: 30px;
+}
+
+#boxes {
+   margin-top: 5px;
 }
