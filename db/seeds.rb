@@ -1,144 +1,261 @@
   image = "index.jpg"
 
 # INGLÉS 6
-Construction.create(name: "INGLÉS 6", 
+Construction.create(name: "English 6", 
 image_url: image,
-  capacity: 10,
+  capacity: 6,
   city: "Poblado",
   description: "Scarlett Johansson",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 6", 
+Construction.create(name: "English 6", 
 image_url: image,
-  capacity: 8,
+  capacity: 6,
   city: "Laureles",
   description: "Amber Heard",
-  user_id: User.first.id,
-  code: "Intensivo"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 6", 
+Construction.create(name: "English 6", 
 image_url: image,
-  capacity: 10,
+  capacity: 13,
   city: "Poblado",
-  description: "Will Smith",
-  user_id: User.first.id,
-  code: "Semi-Intensivo"
+  description: "Scarlett Johansson",
+  user_id: 1,
+  code: "SE1"
   )
 
+Construction.create(name: "English 6", 
+image_url: image,
+  capacity: 13,
+  city: "Laureles",
+  description: "Amber Heard",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 6", 
+image_url: image,
+  capacity: 13,
+  city: "Laureles",
+  description: "Amber Heard",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 6", 
+image_url: image,
+  capacity: 13,
+  city: "Poblado",
+  description: "Scarlett Johansson",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 6", 
+image_url: image,
+  capacity: 13,
+  city: "Laureles",
+  description: "Amber Heard",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 6", 
+image_url: image,
+  capacity: 13,
+  city: "Laureles",
+  description: "Amber Heard",
+  user_id: 1,
+  code: "SE1"
+  )
 # ---------------------------
 
-# INGLÉS 7
+# English 7
 
-Construction.create(name: "INGLÉS 7", 
+Construction.create(name: "English 7", 
 image_url: image,
-  capacity: 8,
+  capacity: 6,
   city: "Poblado",
   description: "Arnold Schwarzenegger",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 7", 
+Construction.create(name: "English 7", 
 image_url: image,
-  capacity: 7,
+  capacity: 6,
   city: "Laureles",
   description: "Liam Neeson",
-  user_id: User.first.id,
-  code: "Intensivo"
+  user_id: 1,
+  code: "IN1"
+  )
+
+Construction.create(name: "English 7", 
+image_url: image,
+  capacity: 5,
+  city: "Laureles",
+  description: "Liam Neeson",
+  user_id: 1,
+  code: "IN1"
+  )
+
+Construction.create(name: "English 7", 
+image_url: image,
+  capacity: 8,
+  city: "Laureles",
+  description: "Liam Neeson",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 7", 
+image_url: image,
+  capacity: 8,
+  city: "Laureles",
+  description: "Liam Neeson",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 7", 
+image_url: image,
+  capacity: 8,
+  city: "Laureles",
+  description: "Liam Neeson",
+  user_id: 1,
+  code: "SE1"
   )
 
 # ---------------------
 
-# INGLÉS 8
-Construction.create(name: "INGLÉS 8", 
+# English 8
+Construction.create(name: "English 8", 
 image_url: image,
-  capacity: 8,
+  capacity: 30,
   city: "Poblado",
   description: "Leonardo DiCaprio",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 8", 
+Construction.create(name: "English 8", 
 image_url: image,
-  capacity: 10,
+  capacity: 30,
   city: "Laureles",
   description: "Marion Cotillard",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 8", 
+Construction.create(name: "English 8", 
 image_url: image,
-  capacity: 10,
+  capacity: 30,
   city: "Poblado",
   description: "Ellen Page",
-  user_id: User.first.id,
-  code: "Semi-Intensivo"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 8", 
+Construction.create(name: "English 8", 
 image_url: image,
-  capacity: 8,
+  capacity: 13,
   city: "Poblado",
-  description: "Blake Lively",
-  user_id: User.first.id,
-  code: "Regular"
+  description: "Ellen Page",
+  user_id: 1,
+  code: "SE1"
   )
+
+Construction.create(name: "English 8", 
+image_url: image,
+  capacity: 13,
+  city: "Poblado",
+  description: "Ellen Page",
+  user_id: 1,
+  code: "SE1"
+  )
+
+Construction.create(name: "English 8", 
+image_url: image,
+  capacity: 13,
+  city: "Poblado",
+  description: "Ellen Page",
+  user_id: 1,
+  code: "SE1"
+  )
+
 
 # ---------------------------
 
-# INGLÉS 9
+# English 9
 
-Construction.create(name: "INGLÉS 9", 
+Construction.create(name: "English 9", 
 image_url: image,
-  capacity: 10,
+  capacity: 27,
   city: "Laureles",
   description: "Leighton Meester",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 9", 
+Construction.create(name: "English 9", 
 image_url: image,
   capacity: 10,
   city: "Poblado",
   description: "Michelle Trachtenberg",
-  user_id: User.first.id,
-  code: "Semi-Intensivo"
+  user_id: 1,
+  code: "IN1"
+  )
+
+Construction.create(name: "English 9", 
+image_url: image,
+  capacity: 11,
+  city: "Poblado",
+  description: "Michelle Trachtenberg",
+  user_id: 1,
+  code: "IN1"
+  )
+
+Construction.create(name: "English 9", 
+image_url: image,
+  capacity: 10,
+  city: "Poblado",
+  description: "Michelle Trachtenberg",
+  user_id: 1,
+  code: "SE1"
   )
 
 # ---------------------------
 
-# INGLÉS 10
-Construction.create(name: "INGLÉS 10", 
+# English 10
+Construction.create(name: "English 10", 
 image_url: image,
-  capacity: 8,
+  capacity: 3,
   city: "Poblado",
   description: "Elizabeth Hurley",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "IN1"
   )
 
-Construction.create(name: "INGLÉS 10", 
+Construction.create(name: "English 10", 
 image_url: image,
-  capacity: 10,
+  capacity: 5,
   city: "Laureles",
   description: "Nan Zhang",
-  user_id: User.first.id,
-  code: "Regular"
+  user_id: 1,
+  code: "SE1"
   )
 
-Construction.create(name: "INGLÉS 10", 
+Construction.create(name: "English 10", 
 image_url: image,
-  capacity: 10,
+  capacity: 5,
   city: "Poblado",
   description: "Jessica Alba",
-  user_id: User.first.id,
-  code: "Semi-Intensivo"
+  user_id: 1,
+  code: "SE1"
   )
 
 # ---------------------------
