@@ -1,8 +1,10 @@
 class CreateHmcourses < ActiveRecord::Migration[5.0]
   def change
     create_table :hmcourses do |t|
-      t.string :level
-      t.integer :hwmany
+      t.integer :cursoid
+      t.string :nombre
+      t.string :sesion
+      t.integer :gruposPredicted
 
       t.timestamps
     end

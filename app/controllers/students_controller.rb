@@ -5,6 +5,6 @@ class StudentsController < ApplicationController
 
   def import
     Student.import(params[:file])
-    redirect_to root_url, notice: "Activity Data imported"
+    redirect_to root_url, notice: "Datos cargados con éxito"
   end
 end

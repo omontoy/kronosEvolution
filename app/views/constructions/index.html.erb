@@ -1,12 +1,21 @@
-<% if @constructions.count == 0 %>
+<% if Student.count == 0 %>
   <div class="col-sm-6 col-sm-offset-3">
-    <div class="jumbotron">
-      <h1 class="text-center">No existe este curso !!</h1>
+
+    <div class="text-center" id="logo-eafit">
+      <%= image_tag("logo_idiomas_eafit.png") %>
     </div>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Bienvenido al Predictor de Idiomas EAFIT !!</h1>
+    </div>
+
+    <div class=" form-group text-center">
+      <%= link_to "Comenzar", hmcourses_path, class:"btn btn-info btn-lg" %>
+    </div>
+
   </div>
 
   <% else %>
-
   
   <% @constructions.each do |construction| %>
     <div class="container">
@@ -21,29 +30,19 @@
 
             <div class="col-xs-6">
               <h1 class="text-center">
-                <%= link_to construction.name, construction_path(construction.id) %>
+                <%= link_to construction.name, construction_path(construction.id), id: "indexNames" %>
               </h1>
 
-              <!-- <div class="text-center" id="date">
-                <em>Publicado por <%= construction.user.email %> hace <%= time_ago_in_words(construction.created_at) %></em>
-              </div> -->
-
-              <h4 class="text-center">
-                <% if user_signed_in? && construction.user == current_user %>
-
-                  <%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, edit_construction_path(construction), id:"edit_button" %>
-
-                  <%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, construction, data: { confirm: "Seguro desea eliminar el post ?" }, method: :delete, id:"delete_button" %>
-                  
-                <% end %>
-              </h4>
               
 
+              
               <div id="infoThumbnail">
 
                 <div class="text-center" id="text">
-                  <label>CAPACIDAD</label>
-                  <p><%= construction.capacity %> Estudiantes</p> 
+                  <label>CANTIDAD</label>
+                  <!-- <p><%= construction.capacity %> Estudiantes </p> -->
+                  
+                  <p><%= Hmcourse.count %> Estudiantes </p>
                 </div>
                 
                 <!-- <div class ="text-center" id="text">

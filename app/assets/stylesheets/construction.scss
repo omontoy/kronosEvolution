@@ -2,6 +2,12 @@
    height: 100%;
 }
 
+#padding_images {
+   padding-right: 0px;
+   padding-left: 0px;
+   height: 100%;
+}
+
 #text-show {
    color: black;
 
@@ -54,7 +60,7 @@
    }
 }
 
-#infoThumbnail {
+#info_Thumbnail {
    label {
       font-size: 25px;
    }
@@ -62,4 +68,9 @@
    p {
       font-size: 20px;
    }
+
+}
+
+h1#showNames {
+   margin-left: 250px;
 }

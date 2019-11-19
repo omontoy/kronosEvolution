@@ -3,6 +3,7 @@
 @import "constructions";
 @import "user_posts";
 @import "construction";
+@import "students";
 
 .navbar {
    background: #00395B;
@@ -57,6 +58,7 @@ i>b {
    background: #404040;
 }
 
-#logo-eafit {
-  margin: 50px;
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }

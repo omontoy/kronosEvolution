@@ -36,10 +36,12 @@ ActiveRecord::Schema.define(version: 20191031140632) do
   end
 
   create_table "hmcourses", force: :cascade do |t|
-    t.string   "level"
-    t.integer  "hwmany"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "cursoid"
+    t.string   "nombre"
+    t.string   "sesion"
+    t.integer  "gruposPredicted"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "patterns", force: :cascade do |t|
@@ -48,11 +50,11 @@ ActiveRecord::Schema.define(version: 20191031140632) do
   end
 
   create_table "students", force: :cascade do |t|
-    t.string   "level"
-    t.integer  "idStudent"
-    t.string   "sesion"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "cursoid"
+    t.integer  "IDEst"
+    t.integer  "sesionPredicted"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "users", force: :cascade do |t|

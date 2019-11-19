@@ -4,6 +4,11 @@ Rails.application.routes.draw do
     collection { post :import }
   end
 
+#ensayo
+  resources :hmcourses do
+    collection { post :import }
+  end
+
    get 'userposts' => 'user_posts#show'
 
   devise_for :users
