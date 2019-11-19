@@ -14,10 +14,10 @@
 #
 
 class Construction < ApplicationRecord
-   belongs_to :user
+   #belongs_to :user
    has_many :comments, :dependent => :delete_all
    
-   validates :user, presence: true
+   #validates :user, presence: true
 
    validates :name, :image_url, :capacity, :city, :description, :code, presence: true
 
